@@ -13,7 +13,11 @@
 mvn spring-boot:run
 ```
 
-服务默认监听 `http://localhost:8080`。
+服务默认监听 `http://localhost:8080`。若端口被占用，可以临时换一个：
+
+```bash
+mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=18080
+```
 
 ## 接口说明
 
